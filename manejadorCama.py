@@ -49,6 +49,7 @@ class manejadorCama:
                 print('Diagnostico: {}\tFecha de internacion: {}' .format(self.__lista[i].getDiagnostico(), self.__lista[i].getFechaInternacion()))
                 print('Fecha de Alta: {}' .format(self.__lista[i].getFechaAlta()))
                 manejador_medicamento.mostrarDatosMedicamentos(self.__lista[i].getIDCama())
+                self.__lista[i].desocuparCama()
                 encontro = True
             else:
                 i+=1
