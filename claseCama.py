@@ -51,7 +51,7 @@ class Cama:
     def getFechaAlta(self):
         return self.__fecha_alta
     
-    def DesocuparCama(self):
+    def desocuparCama(self):
         self.__estado = False
         self.__nombreApellido = None
         
